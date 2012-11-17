@@ -5,7 +5,7 @@ public class ProspectoTest {
     
        public static void main (String [] args){    
            
-          Cliente one = new Cliente();
+          Prospecto one = new Prospecto();
           one.codigo = 231L  ;
           one.nombre = "  Hector ";
           one.a_paterno = "Delgado ";
@@ -15,7 +15,7 @@ public class ProspectoTest {
 //          one.email = hdelgado@upc.pe;
           one.prospecto1();
        
-          Cliente two = new Cliente();
+          Prospecto two = new Prospecto();
           two.codigo = 232L   ;
           two.nombre = "  Francisco ";
           two.a_paterno = "Carreño ";
@@ -25,7 +25,7 @@ public class ProspectoTest {
 //        two.email = fcarreño@upc.edu.pe;
           two.prospecto2();
           
-          Cliente three = new Cliente();
+          Prospecto three = new Prospecto();
           three.codigo = 233L   ;
           three.nombre = "  Fabrizio ";
           three.a_paterno = "Aguirre ";
@@ -35,7 +35,7 @@ public class ProspectoTest {
 //        three.email = faguirre@upc.edu.pe;
           three.prospecto3();  
           
-          Cliente four = new Cliente();
+          Prospecto four = new Prospecto();
           four.codigo = null   ;
           four.nombre = null;
           four.a_paterno = null;

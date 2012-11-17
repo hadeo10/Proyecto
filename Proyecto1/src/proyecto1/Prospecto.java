@@ -5,7 +5,7 @@ package proyecto1;
  *
  * @author hector
  */
-public class Cliente {
+public class Prospecto {
     Long codigo;
     String nombre;
     String a_paterno;
