@@ -1,0 +1,136 @@
+
+package crm.model;
+/**
+ *
+ * @author Administrador
+ */
+public class Cliente {
+    public String nombres;
+    public String apellidoPaterno;
+    public String apellidoMaterno;
+    public String email;
+    public String dni;  
+    public String telefono;
+    public String fechaContacto;
+    public String fechaPase;
+    public String tipo ; //1 cliente
+
+public Cliente()    {    
+}    
+    public Cliente(String nombres, String apellidoPaterno, String apellidoMaterno, 
+            String email, String dni, String telefono, String fechaContacto, 
+            String fechaPase, String tipo) {
+        this.nombres = nombres;
+        this.apellidoPaterno = apellidoPaterno;
+        this.apellidoMaterno = apellidoMaterno;
+        this.email = email;
+        this.dni = dni;
+        this.telefono = telefono;
+        this.fechaContacto = fechaContacto;
+        this.fechaPase = fechaPase;
+        this.tipo = tipo;
+    }
+ 
+
+    public String getApellidoMaterno() {
+        return apellidoMaterno;
+    }
+
+    public void setApellidoMaterno(String apellidoMaterno) {
+        this.apellidoMaterno = apellidoMaterno;
+    }
+
+    public String getApellidoPaterno() {
+        return apellidoPaterno;
+    }
+
+    public void setApellidoPaterno(String apellidoPaterno) {
+        this.apellidoPaterno = apellidoPaterno;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFechaPase() {
+        return fechaPase;
+    }
+
+    public void setFechaPase(String fechaPase) {
+        this.fechaPase = fechaPase;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+    
+    public int compareToFechaPase(Cliente cliente){
+        Integer intComparador = Integer.parseInt(getFechaPase());
+        Integer intComparable = Integer.parseInt(cliente.getFechaPase());
+        return intComparador.compareTo(intComparable);
+    }
+  public int compareToFechaContacto(Cliente cliente){
+        Integer intComparador = Integer.parseInt(getFechaContacto());
+        Integer intComparable = Integer.parseInt(cliente.getFechaContacto());
+        return intComparador.compareTo(intComparable);
+    } 
+  
+    public int compareTo(Cliente otra){
+        //BECliente otra = (BECliente) o;
+        Integer intComparador = Integer.parseInt(getFechaPase());
+        Integer intComparable = Integer.parseInt(otra.getFechaPase());
+        //return intComparador.compareTo(intComparable);
+        return intComparador.compareTo(intComparable);
+  }
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    /**
+     * @return the fechaContacto
+     */
+    public String getFechaContacto() {
+        return fechaContacto;
+    }
+
+    /**
+     * @param fechaContacto the fechaContacto to set
+     */
+    public void setFechaContacto(String fechaContacto) {
+        this.fechaContacto = fechaContacto;
+    }    
+}
